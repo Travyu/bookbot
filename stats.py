@@ -18,4 +18,13 @@ def character_count(book):
 def sort_on(dict):
     return dict["num"]
         
-        
+def chars_dict_to_sorted_list(char_dict):
+    dict_list = []
+    for char, num in char_dict.items():
+        if char.isalpha():
+            new_dict = {"char": char, "num": num}
+            dict_list.append(new_dict)
+    
+
+    dict_list.sort(reverse=True, key=sort_on)
+    return dict_list        
