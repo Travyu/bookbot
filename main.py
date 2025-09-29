@@ -8,6 +8,7 @@ def main():
     char_dict = character_count(book)
     # print(character_count(book))
     
+    
     dict_list = []
     for char, num in char_dict.items():
         if char.isalpha():
