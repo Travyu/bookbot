@@ -15,3 +15,6 @@ def character_count(book):
         character_key[character] += 1
     return character_key
 
+def sort_on(dict):
+    return dict["num"]
+        
