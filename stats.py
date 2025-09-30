@@ -24,7 +24,5 @@ def chars_dict_to_sorted_list(char_dict):
         if char.isalpha():
             new_dict = {"char": char, "num": num}
             dict_list.append(new_dict)
-    
-
     dict_list.sort(reverse=True, key=sort_on)
     return dict_list        
